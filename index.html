@@ -1,393 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jessica Syafaq Muthmaina — Astrophysicist</title>
-<meta name="description" content="M.Sc. Astrophysics &amp; Cosmology candidate at Università degli Studi di Padova. Quasar astrometry, VLBI, superconducting detectors, and science communication.">
-<meta property="og:title" content="Jessica Syafaq Muthmaina — Astrophysicist">
-<meta property="og:description" content="Quasar astrometry, VLBI, superconducting detectors, and science communication.">
-<meta property="og:type" content="profile">
-<meta property="og:image" content="img/jessica-illustration.jpg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Poppins:wght@300;400;500;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Syafaq Muthmaina | Retro Space Desktop</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Google Fonts for retro pixel art and monospace styling -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Silkscreen&family=Share+Tech+Mono&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- MathJax for scientific notation rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
+    <!-- Retro Scanline Overlay for Y2K CRT look -->
+    <div class="crt-overlay"></div>
 
-<!-- ticker ---------------------------------------------------- -->
-<div class="ticker">
-  <div class="ticker__track">
-    <span>M.Sc. Astrophysics &amp; Cosmology, Padova &nbsp;<em>&#10022;</em>&nbsp; incoming Erasmus+ trainee at IRAM Grenoble &nbsp;<em>&#10022;</em>&nbsp; open to collaborations &amp; speaking &nbsp;<em>&#10022;</em>&nbsp;</span>
-    <span aria-hidden="true">M.Sc. Astrophysics &amp; Cosmology, Padova &nbsp;<em>&#10022;</em>&nbsp; incoming Erasmus+ trainee at IRAM Grenoble &nbsp;<em>&#10022;</em>&nbsp; open to collaborations &amp; speaking &nbsp;<em>&#10022;</em>&nbsp;</span>
-  </div>
-</div>
-
-<!-- nav (menu bar) -------------------------------------------- -->
-<header class="nav">
-  <div class="shell nav__inner">
-    <a class="nav__brand" href="#top">your<span>astrophysicist</span></a>
-    <button class="nav__toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
-    <ul class="nav__links" id="navlinks">
-      <li><a href="#about">AboutMe.txt</a></li>
-      <li><a href="#focus">System.sys</a></li>
-      <li><a href="#research">Quasar.doc</a></li>
-      <li><a href="#outreach">Outreach.url</a></li>
-      <li><a href="#cv">Resume.txt</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<main id="top">
-
-  <!-- hero: bare desktop, no window ------------------------- -->
-  <section class="hero">
-    <div class="shell">
-      <span class="sticker" style="top:12%;right:8%;--rot:-12deg">&#10022;</span>
-      <span class="sticker" style="top:52%;right:19%;--rot:9deg;animation-delay:1.4s">&#9733;</span>
-      <span class="sticker" style="bottom:12%;right:5%;--rot:16deg;animation-delay:2.6s">&#127756;</span>
-
-      <p class="label reveal">Jessica Syafaq Muthmaina &middot; astrophysics &amp; cosmology &middot; Padova</p>
-      <h1 class="hero__statement reveal">
-        Measuring the universe&rsquo;s <span class="serif-em">steadiest lights</span>, and telling everyone what they say
-      </h1>
-      <div class="hero__meta reveal">
-        <a class="btn98 btn98--primary" href="#contact">Get in touch</a>
-        <a class="btn98" href="#research">View research</a>
-        <p class="hero__note">Quasar astrometry, VLBI and superconducting detectors &mdash; plus a YouTube channel and a Substack for everything that won&rsquo;t fit inside a paper.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- about: Notepad ---------------------------------------- -->
-  <section class="band" id="about">
-    <div class="shell">
-      <div class="win reveal">
-        <div class="win__bar">
-          <span class="win__title">AboutMe.txt &mdash; Notepad</span>
-          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
-        </div>
-        <div class="win__menu" aria-hidden="true">
-          <span>File</span><span>Edit</span><span>Search</span><span>Help</span>
-        </div>
-        <div class="win__doc">
-          <div class="about__grid">
-            <div class="about__portrait">
-              <img src="img/jessica-dandelion.jpg" alt="Jessica Syafaq Muthmaina standing in a field of dandelions">
+    <!-- The main Windows 98 Desktop area -->
+    <div class="desktop" id="desktop">
+        
+        <!-- Desktop Grid of Icons -->
+        <div class="desktop-grid">
+            <div class="desktop-icon" onclick="openWindow('win-sys')">
+                <svg class="icon-svg" viewBox="0 0 32 32">
+                    <rect x="4" y="6" width="24" height="16" fill="#c0c0c0" stroke="#000000" stroke-width="2"/>
+                    <rect x="6" y="8" width="20" height="12" fill="#000080"/>
+                    <path d="M 8 22 L 24 22 L 26 26 L 6 26 Z" fill="#808080" stroke="#000000" stroke-width="2"/>
+                    <rect x="12" y="26" width="8" height="2" fill="#000000"/>
+                </svg>
+                <div class="icon-label">System.sys</div>
             </div>
-            <div>
-              <p class="label">About</p>
-              <h2 class="display display--sm">Hey, I&rsquo;m Jessica.<br>It&rsquo;s nice to meet you!</h2>
-              <div class="prose" style="margin-top:22px">
-                <p>I am currently pursuing my M.Sc. in Astrophysics and Cosmology at <strong>Universit&agrave; degli Studi di Padova</strong> in Italy. I previously graduated with a B.Sc. in Physics from <strong>Universitas Gadjah Mada</strong> in Indonesia, where I specialised in Theoretical and Computational Physics.</p>
-                <p>Next up is an <strong>Erasmus+ traineeship at IRAM Grenoble</strong>, France, within the Superconducting Devices Group &mdash; working with Dr. Eduard Driessen on superconducting detectors and radio astronomy instrumentation receiver systems.</p>
-                <p>Away from the telescope, I&rsquo;m active in intersectional advocacy and community building through collective actions in Garut with <strong>Sadar Setara</strong> and <strong>Ruang Postulat</strong>.</p>
-              </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-about')">
+                <svg class="icon-svg" viewBox="0 0 32 32">
+                    <path d="M 6 4 L 20 4 L 26 10 L 26 28 L 6 28 Z" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+                    <path d="M 20 4 L 20 10 L 26 10 Z" fill="#c0c0c0" stroke="#000000" stroke-width="2"/>
+                    <line x1="10" y1="14" x2="22" y2="14" stroke="#000000" stroke-width="2"/>
+                    <line x1="10" y1="18" x2="22" y2="18" stroke="#000000" stroke-width="2"/>
+                    <line x1="10" y1="22" x2="18" y2="22" stroke="#000000" stroke-width="2"/>
+                </svg>
+                <div class="icon-label">AboutMe.txt</div>
             </div>
-          </div>
-        </div>
-        <div class="win__status" aria-hidden="true">
-          <span>Ln 1, Col 1</span><span>100%</span><span>UTF-8</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- focus: System Properties ------------------------------- -->
-  <section class="band band--ink" id="focus">
-    <div class="shell">
-      <div class="win reveal">
-        <div class="win__bar">
-          <span class="win__title">System Properties &mdash; Jessica Info</span>
-          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
-        </div>
-        <div class="win__body">
-          <p class="label">Focus</p>
-          <h2 class="display display--sm" style="margin-bottom:26px">Where curiosity meets <span class="serif-em">rigour</span>.</h2>
-
-          <div class="focus__grid">
-            <article class="focus__card">
-              <p class="focus__num">01</p>
-              <h3>Observational cosmology</h3>
-              <p>VLBI time-series analysis and quasar astrometry &mdash; testing how stable our celestial reference points really are.</p>
-            </article>
-            <article class="focus__card">
-              <p class="focus__num">02</p>
-              <h3>Instrumentation</h3>
-              <p>Superconducting detectors and radio astronomy receiver systems, with hands-on high-energy instrumentation lab work.</p>
-            </article>
-            <article class="focus__card">
-              <p class="focus__num">03</p>
-              <h3>Computation</h3>
-              <p>Reproducible scientific pipelines, from noise modelling to manuscript, built on an open Python stack.</p>
-            </article>
-          </div>
-
-          <fieldset class="field">
-            <legend>Computational Tech Stack</legend>
-            <ul class="stack">
-              <li>Python</li>
-              <li>Astropy</li>
-              <li>SciPy</li>
-              <li>NumPy</li>
-              <li>Matplotlib</li>
-              <li>Polars</li>
-              <li>scikit-learn</li>
-              <li>LaTeX</li>
-              <li>C4 architecture modelling</li>
-              <li>Obsidian / Zettelkasten</li>
-            </ul>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- research: WordPad -------------------------------------- -->
-  <section class="band band--deep" id="research">
-    <div class="shell">
-      <div class="win reveal">
-        <div class="win__bar">
-          <span class="win__title">Quasar_Research.doc &mdash; WordPad</span>
-          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
-        </div>
-        <div class="win__toolbar" aria-hidden="true">
-          <b>B</b><i>I</i><u>U</u>
-          <span class="divider"></span>
-          <span class="fontname">MS Sans Serif</span>
-        </div>
-        <div class="win__doc">
-          <div class="research__grid">
-            <div class="research__media">
-              <img src="img/jessica-binary-camera.jpg" alt="Jessica Syafaq Muthmaina photographed with a camera">
+            <div class="desktop-icon" onclick="openWindow('win-research')">
+                <svg class="icon-svg" viewBox="0 0 32 32">
+                    <path d="M 6 4 L 20 4 L 26 10 L 26 28 L 6 28 Z" fill="#e8d9ff" stroke="#000000" stroke-width="2"/>
+                    <path d="M 20 4 L 20 10 L 26 10 Z" fill="#b8c4d8" stroke="#000000" stroke-width="2"/>
+                    <circle cx="16" cy="18" r="4" fill="none" stroke="#8b0000" stroke-width="2"/>
+                    <line x1="16" y1="10" x2="16" y2="14" stroke="#8b0000" stroke-width="2"/>
+                    <line x1="16" y1="22" x2="16" y2="26" stroke="#8b0000" stroke-width="2"/>
+                </svg>
+                <div class="icon-label">Quasar.doc</div>
             </div>
-            <div>
-              <p class="label">Featured research</p>
-              <h2 class="doc-title">Positional Stability Analysis of Quasar 4C31.61 Using VLBI Time Series and Allan Standard Deviation</h2>
-              <p class="doc-meta">Journal of Physics: Conference Series &middot; arXiv:2401.12325</p>
 
-              <div class="prose">
-                <p>Quasar <strong>4C31.61 (2201+315)</strong> is an essential celestial reference point in the International Celestial Reference Frame (ICRF). To evaluate its positional stability, we analyse multi-year VLBI position time series using the Allan standard deviation method.</p>
-              </div>
+            <div class="desktop-icon" onclick="openWindow('win-calc')">
+                <svg class="icon-svg" viewBox="0 0 32 32">
+                    <rect x="6" y="4" width="20" height="24" fill="#dfdfdf" stroke="#000000" stroke-width="2"/>
+                    <rect x="8" y="6" width="16" height="6" fill="#a0b0a0" stroke="#000000" stroke-width="2"/>
+                    <rect x="9" y="14" width="4" height="3" fill="#808080"/>
+                    <rect x="15" y="14" width="4" height="3" fill="#808080"/>
+                    <rect x="9" y="19" width="4" height="3" fill="#808080"/>
+                    <rect x="15" y="19" width="4" height="3" fill="#808080"/>
+                    <rect x="9" y="24" width="10" height="3" fill="#808080"/>
+                </svg>
+                <div class="icon-label">AllanDev.exe</div>
+            </div>
 
-              <div class="formula">
-                <p class="formula__label">Allan variance formula</p>
-                <div class="math">
-                  <span>&sigma;<sub>y</sub><sup>2</sup>(&tau;)</span>
-                  <span>=</span>
-                  <span class="frac"><span>1</span><span>2(N&minus;1)</span></span>
-                  <span class="sum"><span>N&minus;1</span><b>&Sigma;</b><span>i=1</span></span>
-                  <span>(&#563;<sub>i+1</sub> &minus; &#563;<sub>i</sub>)<sup>2</sup></span>
+            <div class="desktop-icon" onclick="openWindow('win-media')">
+                <svg class="icon-svg" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="12" fill="#d7f0ff" stroke="#000000" stroke-width="2"/>
+                    <path d="M 6 16 L 26 16" stroke="#000000" stroke-width="2"/>
+                    <path d="M 16 6 A 10 10 0 0 0 16 26" fill="none" stroke="#000000" stroke-width="2"/>
+                    <path d="M 16 6 A 10 10 0 0 1 16 26" fill="none" stroke="#000000" stroke-width="2"/>
+                </svg>
+                <div class="icon-label">Outreach.url</div>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('win-cv')">
+                <svg class="icon-svg" viewBox="0 0 32 32">
+                    <rect x="6" y="4" width="20" height="24" fill="#ffccee" stroke="#000000" stroke-width="2"/>
+                    <line x1="10" y1="10" x2="22" y2="10" stroke="#202030" stroke-width="2"/>
+                    <line x1="10" y1="14" x2="22" y2="14" stroke="#202030" stroke-width="2"/>
+                    <line x1="10" y1="18" x2="22" y2="18" stroke="#202030" stroke-width="2"/>
+                    <line x1="10" y1="22" x2="16" y2="22" stroke="#202030" stroke-width="2"/>
+                </svg>
+                <div class="icon-label">Resume.txt</div>
+            </div>
+        </div>
+
+        <!-- Ambient Cosmic ASCII Header Widget in Desktop -->
+        <div class="desktop-ascii-banner">
+            <pre class="ascii-art">
+   _   ___ ___  ___  ___  _  _  ___  __   ___   _ 
+  | | | __/ __|/ __|/ __|| |/ /| __|/  \ / __| / \
+ _|_| | _|\__ \\__ \\__ \|   < | _| | () |\__ \|_  |
+(_)(_)___|___/|___/|___/|_|\_\|___|\__/ |___/  \_/
+            </pre>
+            <div class="ascii-sub">ASTROPHYSICS - OBSERVATIONAL COSMOLOGY - RESEARCH SYSTEM</div>
+        </div>
+
+        <!-- 1. SYSTEM PROPERTIES WINDOW (System info & Tech stack) -->
+        <div class="window" id="win-sys" style="top: 8%; left: 15%; width: 420px; z-index: 101;">
+            <div class="title-bar" onmousedown="dragStart(event, 'win-sys')">
+                <div class="title-bar-text">System Properties - Jessica Info</div>
+                <div class="title-bar-controls">
+                    <button class="tbtn" onclick="minimizeWindow('win-sys')">_</button>
+                    <button class="tbtn" onclick="maximizeWindow('win-sys')">口</button>
+                    <button class="tbtn" onclick="closeWindow('win-sys')">X</button>
                 </div>
-              </div>
-
-              <div class="prose">
-                <p>This model helps separate white frequency noise processes from random walk positional changes caused by plasma jets or structural variations at high resolution.</p>
-              </div>
-
-              <p style="margin-top:26px"><a class="btn98" href="https://arxiv.org/abs/2401.12325" target="_blank" rel="noopener">Read on arXiv</a></p>
             </div>
-          </div>
-        </div>
-        <div class="win__status" aria-hidden="true">
-          <span>For Help, press F1</span><span>Page 1</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- outreach: Internet Explorer ---------------------------- -->
-  <section class="band band--pink" id="outreach">
-    <div class="shell">
-      <div class="win reveal">
-        <div class="win__bar">
-          <span class="win__title">Outreach.url &mdash; Internet Explorer</span>
-          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
-        </div>
-        <div class="addressbar">
-          <span>Address</span>
-          <input type="text" value="https://yourastrophysicist.substack.com/" readonly aria-label="Address bar">
-        </div>
-        <div class="win__body">
-          <img class="outreach__banner" src="img/observationally-speaking-banner.png" alt="Observationally Speaking channel banner">
-
-          <p class="label">Outreach &middot; science communication</p>
-          <h2 class="display display--sm" style="margin-bottom:26px">Everything that won&rsquo;t fit in a paper.</h2>
-
-          <div class="channels">
-            <article class="channel">
-              <h3>Observationally Speaking</h3>
-              <p>YouTube storytelling blending warm visual reflections with high-energy astrophysics and cosmic science topics.</p>
-              <a class="btn98 btn98--primary" href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">Launch channel</a>
-            </article>
-            <article class="channel">
-              <h3>yourastrophysicist</h3>
-              <p>A Substack publication bridging theoretical physics, literature, philosophy, and environmental perspectives.</p>
-              <a class="btn98 btn98--primary" href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">Read essays</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- cv: Notepad -------------------------------------------- -->
-  <section class="band" id="cv">
-    <div class="shell">
-      <div class="win reveal">
-        <div class="win__bar">
-          <span class="win__title">Resume.txt &mdash; Notepad</span>
-          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
-        </div>
-        <div class="win__menu" aria-hidden="true">
-          <span>File</span><span>Edit</span><span>Format</span><span>Help</span>
-        </div>
-        <div class="win__doc">
-          <p class="label">Curriculum vitae</p>
-          <h2 class="display display--sm" style="margin-bottom:30px">Education &amp; highlights</h2>
-
-          <div class="cv__grid">
-            <div class="cv__col">
-              <h3>Education</h3>
-              <div class="cv__item">
-                <h4>M.Sc. Astrophysics and Cosmology</h4>
-                <p>Universit&agrave; degli Studi di Padova (UNIPD), Italy<br>High Energy Instrumentation Laboratory &mdash; 28/30</p>
-              </div>
-              <div class="cv__item">
-                <h4>B.Sc. Physics</h4>
-                <p>Universitas Gadjah Mada (UGM), Indonesia<br>Theoretical and Computational Physics concentration</p>
-              </div>
-
-              <h3 style="margin-top:38px">Publications</h3>
-              <div class="cv__item">
-                <h4>Positional Stability Analysis of Quasar 4C31.61</h4>
-                <p>Using VLBI Time Series and Allan Standard Deviation<br>Journal of Physics: Conference Series &middot; arXiv:2401.12325</p>
-              </div>
+            <div class="window-body">
+                <div class="sys-layout">
+                    <div class="sys-image-container">
+                        <img src="img/jessica-illustration.jpg" alt="Jessica portrait illustration" class="sys-image">
+                    </div>
+                    <div class="sys-details">
+                        <h3 class="pixel-heading">System info</h3>
+                        <p class="sys-item"><strong>User</strong> Jessica S Muthmaina</p>
+                        <p class="sys-item"><strong>Focus</strong> astrophysics and cosmology</p>
+                        <p class="sys-item"><strong>Host</strong> unipd.it</p>
+                        <p class="sys-item"><strong>Base</strong> Universitas Gadjah Mada</p>
+                    </div>
+                </div>
+                <fieldset class="sys-fieldset">
+                    <legend>Computational Tech Stack</legend>
+                    <ul class="tech-list">
+                        <li>Python - Astropy, SciPy, NumPy, Matplotlib, Polars, Scikit-learn</li>
+                        <li>LaTeX - Document and scientific manuscript generation</li>
+                        <li>System Engineering - C4 Architecture modeling</li>
+                        <li>Knowledge Graph - Obsidian Zettelkasten systems</li>
+                    </ul>
+                </fieldset>
+                <div class="window-footer">
+                    <button class="win-btn-default" onclick="closeWindow('win-sys')">OK</button>
+                </div>
             </div>
+        </div>
 
-            <div class="cv__col">
-              <h3>Selected achievements</h3>
-              <ul class="cv__list">
-                <li>Erasmus+ traineeship candidate at IRAM Grenoble, Superconducting Devices Group &mdash; supervised by Dr. Eduard Driessen.</li>
-                <li>Creator of <strong>Observationally Speaking</strong>, a YouTube channel on high-energy astrophysics and cosmic science.</li>
-                <li>Author of <strong>yourastrophysicist</strong> on Substack, bridging physics, literature, philosophy and ecology.</li>
-                <li>Advocacy lead across the <strong>Sadar Setara</strong> and <strong>Ruang Postulat</strong> community campaigns in Garut.</li>
-                <li>High Energy Instrumentation Laboratory completed with a grade of 28/30.</li>
-              </ul>
+        <!-- 2. ABOUT ME TEXT READER WINDOW (Bio, Dandelion picture, advocacy) -->
+        <div class="window" id="win-about" style="top: 15%; left: 35%; width: 480px; z-index: 100;">
+            <div class="title-bar" onmousedown="dragStart(event, 'win-about')">
+                <div class="title-bar-text">AboutMe.txt - Notepad</div>
+                <div class="title-bar-controls">
+                    <button class="tbtn" onclick="minimizeWindow('win-about')">_</button>
+                    <button class="tbtn" onclick="maximizeWindow('win-about')">口</button>
+                    <button class="tbtn" onclick="closeWindow('win-about')">X</button>
+                </div>
             </div>
-          </div>
+            <div class="window-body text-body">
+                <div class="notepad-menu">
+                    <span>File</span><span>Edit</span><span>Search</span><span>Help</span>
+                </div>
+                <div class="notepad-textarea">
+                    <img src="img/jessica-dandelion.jpg" alt="Jessica in dandelion field" class="notepad-image">
+                    <p class="notepad-text">
+                        I am currently pursuing my M.Sc. in Astrophysics and Cosmology at Universita degli Studi di Padova (Italy). I previously graduated with a B.Sc. in Physics from Universitas Gadjah Mada (Indonesia), specializing in Theoretical and Computational Physics.
+                    </p>
+                    <p class="notepad-text">
+                        Upcoming Traineeship - Erasmus+ candidate at IRAM Grenoble (France) within the Superconducting Devices Group, working with Dr. Eduard Driessen on superconducting detectors and radio astronomy instrumentation receiver systems.
+                    </p>
+                    <p class="notepad-text">
+                        Lab Experience - Completed High Energy Instrumentation Laboratory with a grade of 28/30.
+                    </p>
+                    <p class="notepad-text">
+                        Social Advocacy - Active in intersectional advocacy and community building through collective actions in Garut with Sadar Setara and Ruang Postulat.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="win__status" aria-hidden="true">
-          <span>Ln 1, Col 1</span><span>100%</span><span>UTF-8</span>
+
+        <!-- 3. FEATURED RESEARCH DOCUMENT (VLBI and quasar stability analysis) -->
+        <div class="window" id="win-research" style="top: 20%; left: 5%; width: 550px; z-index: 99;">
+            <div class="title-bar" onmousedown="dragStart(event, 'win-research')">
+                <div class="title-bar-text">Quasar_Research.doc - WordPad</div>
+                <div class="title-bar-controls">
+                    <button class="tbtn" onclick="minimizeWindow('win-research')">_</button>
+                    <button class="tbtn" onclick="maximizeWindow('win-research')">口</button>
+                    <button class="tbtn" onclick="closeWindow('win-research')">X</button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="wordpad-toolbar">
+                    <span class="toolbar-btn font-bold">B</span>
+                    <span class="toolbar-btn font-italic">I</span>
+                    <span class="toolbar-btn font-underline">U</span>
+                    <span class="toolbar-divider"></span>
+                    <span class="toolbar-font-name">MS Sans Serif</span>
+                </div>
+                <div class="document-content">
+                    <div class="research-hero">
+                        <img src="img/jessica-binary-camera.jpg" alt="Jessica binary camera composition" class="research-banner">
+                    </div>
+                    
+                    <h2 class="doc-title">Positional Stability Analysis of Quasar 4C31.61 Using VLBI Time Series and Allan Standard Deviation</h2>
+                    <p class="doc-meta">Journal of Physics Conference Series | arXiv 2401.12325</p>
+                    
+                    <p class="doc-paragraph">
+                        Quasar 4C31.61 (2201+315) is an essential celestial reference point in the International Celestial Reference Frame (ICRF). To evaluate its positional stability, we analyze multi-year VLBI position time series using the Allan standard deviation method.
+                    </p>
+
+                    <div class="doc-formula-box">
+                        <p class="formula-label">Allan Variance Formula</p>
+                        <div class="formula-render">
+                            $$ \sigma_y^2(\tau) = \frac{1}{2(N-1)} \sum_{i=1}^{N-1} (\bar{y}_{i+1} - \bar{y}_i)^2 $$
+                        </div>
+                    </div>
+
+                    <p class="doc-paragraph">
+                        This model helps separate white frequency noise processes from random walk positional changes caused by plasma jets or structural variations at high resolution.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- 4. ALLAN DEVIATION SIMULATOR WINDOW (Interactive simulation canvas) -->
+        <div class="window" id="win-calc" style="top: 25%; left: 45%; width: 520px; z-index: 98;">
+            <div class="title-bar" onmousedown="dragStart(event, 'win-calc')">
+                <div class="title-bar-text">Allan_Variance_Simulator.exe</div>
+                <div class="title-bar-controls">
+                    <button class="tbtn" onclick="minimizeWindow('win-calc')">_</button>
+                    <button class="tbtn" onclick="maximizeWindow('win-calc')">口</button>
+                    <button class="tbtn" onclick="closeWindow('win-calc')">X</button>
+                </div>
+            </div>
+            <div class="window-body">
+                <div class="calc-panel">
+                    <div class="canvas-header">
+                        <span class="pixel-heading">Allan Deviation σ_y(τ) Simulation Plot</span>
+                    </div>
+                    <canvas id="allan-canvas" width="480" height="240"></canvas>
+                    
+                    <fieldset class="calc-controls">
+                        <legend>Simulation Control Panel</legend>
+                        <div class="control-row">
+                            <label>Sampling interval τ - <span id="lbl-tau">50 days</span></label>
+                            <input type="range" id="input-tau" min="1" max="500" step="5" value="50">
+                        </div>
+                        <div class="control-row">
+                            <label>VLBI Baseline distance b - <span id="lbl-baseline">8000 km</span></label>
+                            <input type="range" id="input-baseline" min="1000" max="12000" step="250" value="8000">
+                        </div>
+                        <div class="control-row highlight-row">
+                            <span>Computed Deviation σ_y</span>
+                            <span id="lbl-result" class="neon-badge">0.042 mas</span>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="calc-buttons">
+                        <button id="calc-btn" class="win-btn-default">Run Real-time Simulation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. OUTREACH & MEDIA WINDOW (Youtube and substack links) -->
+        <div class="window" id="win-media" style="top: 30%; left: 22%; width: 460px; z-index: 97;">
+            <div class="title-bar" onmousedown="dragStart(event, 'win-media')">
+                <div class="title-bar-text">Outreach.url - Internet Explorer</div>
+                <div class="title-bar-controls">
+                    <button class="tbtn" onclick="minimizeWindow('win-media')">_</button>
+                    <button class="tbtn" onclick="maximizeWindow('win-media')">口</button>
+                    <button class="tbtn" onclick="closeWindow('win-media')">X</button>
+                </div>
+            </div>
+            <div class="window-body text-body">
+                <div class="browser-address-bar">
+                    <span class="address-label">Address</span>
+                    <input type="text" class="address-input" value="https://yourastrophysicist.substack.com/" readonly>
+                </div>
+                <div class="browser-content">
+                    <img src="img/observationally-speaking-banner.png" alt="Observationally Speaking Banner" class="browser-banner">
+                    
+                    <fieldset class="link-card-group">
+                        <legend>Science Communication Channels</legend>
+                        
+                        <div class="web-link-card">
+                            <h4 class="pixel-heading">Observationally Speaking</h4>
+                            <p class="card-desc">YouTube storytelling blending warm visual reflections with high energy astrophysics and cosmic science topics.</p>
+                            <a href="https://www.youtube.com/@observationallyspeaking" target="_blank" class="win-link-button">Launch Channel</a>
+                        </div>
+                        
+                        <div class="web-link-card">
+                            <h4 class="pixel-heading">yourastrophysicist</h4>
+                            <p class="card-desc">Substack publication bridging theoretical physics, literature, philosophy, and environmental perspectives.</p>
+                            <a href="https://yourastrophysicist.substack.com" target="_blank" class="win-link-button">Read Essays</a>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. CURRICULUM VITAE WINDOW (CV Display) -->
+        <div class="window" id="win-cv" style="top: 35%; left: 30%; width: 450px; z-index: 96;">
+            <div class="title-bar" onmousedown="dragStart(event, 'win-cv')">
+                <div class="title-bar-text">Resume.txt - Notepad</div>
+                <div class="title-bar-controls">
+                    <button class="tbtn" onclick="minimizeWindow('win-cv')">_</button>
+                    <button class="tbtn" onclick="maximizeWindow('win-cv')">口</button>
+                    <button class="tbtn" onclick="closeWindow('win-cv')">X</button>
+                </div>
+            </div>
+            <div class="window-body text-body">
+                <div class="notepad-menu">
+                    <span>File</span><span>Edit</span><span>Format</span><span>Help</span>
+                </div>
+                <div class="notepad-textarea cv-scroller">
+                    <h2 class="cv-name">Jessica Syafaq Muthmaina</h2>
+                    <p class="cv-contact">Astrophysics and Cosmology M.Sc. Candidate | Padova, Italy</p>
+                    <hr class="cv-divider">
+                    
+                    <h3 class="cv-section-title">Education</h3>
+                    <p class="cv-item">
+                        <strong>M.Sc. Astrophysics and Cosmology</strong><br>
+                        Universita degli Studi di Padova (UNIPD)<br>
+                        High Energy Instrumentation Lab Grade - 28/30
+                    </p>
+                    <p class="cv-item">
+                        <strong>B.Sc. Physics</strong><br>
+                        Universitas Gadjah Mada (UGM), Indonesia<br>
+                        Theoretical and Computational Physics concentration
+                    </p>
+
+                    <h3 class="cv-section-title">Academic Publications</h3>
+                    <p class="cv-item">
+                        <em>Positional Stability Analysis of Quasar 4C31.61 Using VLBI Time Series and Allan Standard Deviation</em><br>
+                        Journal of Physics - Conference Series
+                    </p>
+
+                    <h3 class="cv-section-title">Selected Achievements</h3>
+                    <p class="cv-item">
+                        - Traineeship Candidate - IRAM Grenoble, Superconducting Devices Group<br>
+                        - Creator - Observationally Speaking YouTube channel<br>
+                        - Lead Advocacy - Sadar Setara and Ruang Postulat community campaign
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </section>
 
-  <!-- contact: dialog box ------------------------------------ -->
-  <section class="band band--ink" id="contact">
-    <div class="shell">
-      <div class="win dialog reveal">
-        <div class="win__bar">
-          <span class="win__title">Contact</span>
-          <span class="win__ctrls" aria-hidden="true"><span>&times;</span></span>
+    <!-- The Windows 98 Taskbar -->
+    <div class="taskbar">
+        <button class="start-btn" id="start-menu-btn" onclick="toggleStartMenu()">
+            <svg class="start-icon" viewBox="0 0 16 16">
+                <rect x="2" y="2" width="5" height="5" fill="#ff6ab8"/>
+                <rect x="9" y="2" width="5" height="5" fill="#5ab8ff"/>
+                <rect x="2" y="9" width="5" height="5" fill="#7aff9a"/>
+                <rect x="9" y="9" width="5" height="5" fill="#9a7aff"/>
+            </svg>
+            Start
+        </button>
+
+        <div class="taskbar-divider"></div>
+
+        <!-- Open Window Tabs -->
+        <div class="taskbar-tabs" id="taskbar-tabs">
+            <!-- Dynamically populated via JavaScript -->
         </div>
-        <img class="dialog__portrait" src="img/jessica-illustration.jpg" alt="Illustrated portrait of Jessica Syafaq Muthmaina">
-        <div class="dialog__body">
-          <div class="dialog__icon" aria-hidden="true">&#10022;</div>
-          <div class="dialog__msg">
-            <h2>Ready to look at the sky together?</h2>
-            <p>Open to collaborations, talks and questions about anything above.</p>
-          </div>
+
+        <div class="taskbar-divider"></div>
+
+        <!-- System Clock Area -->
+        <div class="system-tray">
+            <svg class="tray-icon" viewBox="0 0 16 16" width="14" height="14">
+                <rect x="2" y="2" width="12" height="12" fill="none" stroke="#202030" stroke-width="1.5"/>
+                <line x1="8" y1="4" x2="8" y2="8" stroke="#202030" stroke-width="1.5"/>
+                <line x1="8" y1="8" x2="11" y2="8" stroke="#202030" stroke-width="1.5"/>
+            </svg>
+            <span id="taskbar-clock">12:00 PM</span>
         </div>
-        <div class="dialog__actions">
-          <a class="btn98 btn98--primary" href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">Say hello</a>
-          <a class="btn98" href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">Watch first</a>
-        </div>
-      </div>
     </div>
-  </section>
 
-</main>
+    <!-- Start Menu Popup -->
+    <div class="start-menu" id="start-menu">
+        <div class="start-menu-sidebar">
+            <span class="sidebar-text">Y2K Space</span>
+        </div>
+        <div class="start-menu-items">
+            <div class="start-item" onclick="launchAndClose('win-sys')">
+                <span class="item-name">System Properties</span>
+            </div>
+            <div class="start-item" onclick="launchAndClose('win-about')">
+                <span class="item-name">AboutMe.txt</span>
+            </div>
+            <div class="start-item" onclick="launchAndClose('win-research')">
+                <span class="item-name">Quasar.doc</span>
+            </div>
+            <div class="start-item" onclick="launchAndClose('win-calc')">
+                <span class="item-name">AllanDev.exe</span>
+            </div>
+            <div class="start-item" onclick="launchAndClose('win-media')">
+                <span class="item-name">Outreach.url</span>
+            </div>
+            <div class="start-item" onclick="launchAndClose('win-cv')">
+                <span class="item-name">Resume.txt</span>
+            </div>
+            <hr class="start-divider">
+            <div class="start-item" onclick="closeAllAndAlert()">
+                <span class="item-name">Shutdown System</span>
+            </div>
+        </div>
+    </div>
 
-<!-- taskbar --------------------------------------------------- -->
-<nav class="taskbar" aria-label="Section shortcuts">
-  <a class="taskbar__start" href="#top">
-    <svg viewBox="0 0 16 16" aria-hidden="true">
-      <rect x="1" y="1" width="6" height="6" fill="#ff5fc6"/>
-      <rect x="9" y="1" width="6" height="6" fill="#ea587d"/>
-      <rect x="1" y="9" width="6" height="6" fill="#fccae9"/>
-      <rect x="9" y="9" width="6" height="6" fill="#1e1e20"/>
-    </svg>
-    <span>Start</span>
-  </a>
-  <span class="taskbar__divider" aria-hidden="true"></span>
-  <div class="taskbar__tabs">
-    <a href="#about">AboutMe.txt</a>
-    <a href="#focus">System.sys</a>
-    <a href="#research">Quasar.doc</a>
-    <a href="#outreach">Outreach.url</a>
-    <a href="#cv">Resume.txt</a>
-  </div>
-  <span class="taskbar__divider" aria-hidden="true"></span>
-  <div class="taskbar__tray"><span id="clock">--:--</span></div>
-</nav>
-
-<!-- credits --------------------------------------------------- -->
-<footer class="credits">
-  <div class="shell credits__inner">
-    <span>&copy; <span id="yr"></span> Jessica Syafaq Muthmaina</span>
-    <span>
-      <a href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">YouTube</a> &middot;
-      <a href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">Substack</a> &middot;
-      <a href="https://arxiv.org/abs/2401.12325" target="_blank" rel="noopener">arXiv</a>
-    </span>
-  </div>
-</footer>
-
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // taskbar clock
-  var clock = document.getElementById('clock');
-  function tick() {
-    clock.textContent = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
-  }
-  tick();
-  setInterval(tick, 10000);
-
-  // mobile nav
-  var toggle = document.querySelector('.nav__toggle');
-  var links = document.getElementById('navlinks');
-  toggle.addEventListener('click', function () {
-    var open = links.classList.toggle('is-open');
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent = open ? 'Close' : 'Menu';
-  });
-  links.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      links.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = 'Menu';
-    }
-  });
-
-  // scroll reveal
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-in');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.06, rootMargin: '0px 0px -40px' });
-
-  document.querySelectorAll('.reveal').forEach(function (el) {
-    io.observe(el);
-  });
-</script>
-
+    <script src="index.js"></script>
 </body>
 </html>
