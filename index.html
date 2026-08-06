@@ -11,7 +11,7 @@
 <meta property="og:image" content="img/jessica-illustration.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Poppins:wght@300;400;500;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,249 +24,339 @@
   </div>
 </div>
 
-<!-- nav ------------------------------------------------------- -->
+<!-- nav (menu bar) -------------------------------------------- -->
 <header class="nav">
   <div class="shell nav__inner">
     <a class="nav__brand" href="#top">your<span>astrophysicist</span></a>
-    <button class="nav__toggle" aria-expanded="false" aria-controls="navlinks">menu</button>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="navlinks">Menu</button>
     <ul class="nav__links" id="navlinks">
-      <li><a href="#about">about</a></li>
-      <li><a href="#focus">focus</a></li>
-      <li><a href="#research">research</a></li>
-      <li><a href="#outreach">outreach</a></li>
-      <li><a href="#cv">cv</a></li>
-      <li><a href="#contact">contact</a></li>
+      <li><a href="#about">AboutMe.txt</a></li>
+      <li><a href="#focus">System.sys</a></li>
+      <li><a href="#research">Quasar.doc</a></li>
+      <li><a href="#outreach">Outreach.url</a></li>
+      <li><a href="#cv">Resume.txt</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <main id="top">
 
-  <!-- hero ---------------------------------------------------- -->
+  <!-- hero: bare desktop, no window ------------------------- -->
   <section class="hero">
     <div class="shell">
-      <span class="sticker" style="top:14%;right:8%;--rot:-12deg">&#10022;</span>
-      <span class="sticker" style="top:54%;right:19%;--rot:9deg;animation-delay:1.4s">&#9733;</span>
-      <span class="sticker" style="bottom:14%;right:5%;--rot:16deg;animation-delay:2.6s">&#127756;</span>
+      <span class="sticker" style="top:12%;right:8%;--rot:-12deg">&#10022;</span>
+      <span class="sticker" style="top:52%;right:19%;--rot:9deg;animation-delay:1.4s">&#9733;</span>
+      <span class="sticker" style="bottom:12%;right:5%;--rot:16deg;animation-delay:2.6s">&#127756;</span>
 
-      <p class="label reveal">Jessica Syafaq Muthmaina &middot; astrophysics &amp; cosmology &middot; Padova, Italy</p>
+      <p class="label reveal">Jessica Syafaq Muthmaina &middot; astrophysics &amp; cosmology &middot; Padova</p>
       <h1 class="hero__statement reveal">
         Measuring the universe&rsquo;s <span class="serif-em">steadiest lights</span>, and telling everyone what they say
       </h1>
       <div class="hero__meta reveal">
-        <a class="btn" href="#contact">get in touch</a>
-        <a class="btn btn--ghost" href="#research">view research</a>
+        <a class="btn98 btn98--primary" href="#contact">Get in touch</a>
+        <a class="btn98" href="#research">View research</a>
         <p class="hero__note">Quasar astrometry, VLBI and superconducting detectors &mdash; plus a YouTube channel and a Substack for everything that won&rsquo;t fit inside a paper.</p>
       </div>
     </div>
   </section>
 
-  <!-- about --------------------------------------------------- -->
-  <section class="intro" id="about">
-    <div class="shell intro__grid">
-      <div class="intro__portrait reveal">
-        <img src="img/jessica-dandelion.jpg" alt="Jessica Syafaq Muthmaina standing in a field of dandelions">
-      </div>
-      <div class="reveal">
-        <p class="label label--pink">about</p>
-        <h2 class="display display--sm">Hey, I&rsquo;m Jessica.<br>It&rsquo;s nice to meet you!</h2>
-        <div class="prose" style="margin-top:28px">
-          <p>I am currently pursuing my M.Sc. in Astrophysics and Cosmology at <strong>Universit&agrave; degli Studi di Padova</strong> in Italy. I previously graduated with a B.Sc. in Physics from <strong>Universitas Gadjah Mada</strong> in Indonesia, where I specialised in Theoretical and Computational Physics.</p>
-          <p>Next up is an <strong>Erasmus+ traineeship at IRAM Grenoble</strong>, France, within the Superconducting Devices Group &mdash; working with Dr. Eduard Driessen on superconducting detectors and radio astronomy instrumentation receiver systems.</p>
-          <p>Away from the telescope, I&rsquo;m active in intersectional advocacy and community building through collective actions in Garut with <strong>Sadar Setara</strong> and <strong>Ruang Postulat</strong>.</p>
-        </div>
-        <p style="margin-top:30px"><a class="btn btn--ghost" href="#research">read my research</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- focus --------------------------------------------------- -->
-  <section class="values" id="focus">
+  <!-- about: Notepad ---------------------------------------- -->
+  <section class="band" id="about">
     <div class="shell">
-      <p class="label label--onDark reveal">focus</p>
-      <h2 class="display reveal">Where curiosity meets <span class="serif-em">rigour</span>.</h2>
-      <div class="values__grid">
-        <article class="value reveal">
-          <p class="value__num">01</p>
-          <h3>Observational cosmology</h3>
-          <p>VLBI time-series analysis and quasar astrometry &mdash; testing how stable our celestial reference points really are.</p>
-        </article>
-        <article class="value reveal">
-          <p class="value__num">02</p>
-          <h3>Instrumentation</h3>
-          <p>Superconducting detectors and radio astronomy receiver systems, with hands-on high-energy instrumentation lab work.</p>
-        </article>
-        <article class="value reveal">
-          <p class="value__num">03</p>
-          <h3>Computation</h3>
-          <p>Reproducible scientific pipelines, from noise modelling to manuscript, built on an open Python stack.</p>
-        </article>
-      </div>
-
-      <ul class="stack reveal">
-        <li class="chip">Python</li>
-        <li class="chip">Astropy</li>
-        <li class="chip">SciPy</li>
-        <li class="chip">NumPy</li>
-        <li class="chip">Matplotlib</li>
-        <li class="chip">Polars</li>
-        <li class="chip">scikit-learn</li>
-        <li class="chip">LaTeX</li>
-        <li class="chip">C4 architecture modelling</li>
-        <li class="chip">Obsidian / Zettelkasten</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- featured research --------------------------------------- -->
-  <section class="feature" id="research">
-    <div class="shell">
-      <p class="label reveal">featured research</p>
-      <div class="feature__grid" style="margin-top:36px">
-        <div class="feature__media reveal">
-          <img src="img/jessica-binary-camera.jpg" alt="Jessica Syafaq Muthmaina photographed with a camera, binary composition">
+      <div class="win reveal">
+        <div class="win__bar">
+          <span class="win__title">AboutMe.txt &mdash; Notepad</span>
+          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
         </div>
-        <div class="reveal">
-          <h2 class="display display--sm">Positional Stability Analysis of Quasar 4C31.61 Using VLBI Time Series and Allan Standard Deviation</h2>
-          <p class="feature__meta">Journal of Physics: Conference Series &middot; arXiv:2401.12325</p>
-
-          <div class="prose">
-            <p>Quasar <strong>4C31.61 (2201+315)</strong> is an essential celestial reference point in the International Celestial Reference Frame (ICRF). To evaluate its positional stability, we analyse multi-year VLBI position time series using the Allan standard deviation method.</p>
-          </div>
-
-          <div class="formula">
-            <p class="formula__label">allan variance</p>
-            <div class="math">
-              <span>&sigma;<sub>y</sub><sup>2</sup>(&tau;)</span>
-              <span>=</span>
-              <span class="frac"><span>1</span><span>2(N&minus;1)</span></span>
-              <span class="sum"><span>N&minus;1</span><b>&Sigma;</b><span>i=1</span></span>
-              <span>(&#563;<sub>i+1</sub> &minus; &#563;<sub>i</sub>)<sup>2</sup></span>
+        <div class="win__menu" aria-hidden="true">
+          <span>File</span><span>Edit</span><span>Search</span><span>Help</span>
+        </div>
+        <div class="win__doc">
+          <div class="about__grid">
+            <div class="about__portrait">
+              <img src="img/jessica-dandelion.jpg" alt="Jessica Syafaq Muthmaina standing in a field of dandelions">
+            </div>
+            <div>
+              <p class="label">About</p>
+              <h2 class="display display--sm">Hey, I&rsquo;m Jessica.<br>It&rsquo;s nice to meet you!</h2>
+              <div class="prose" style="margin-top:22px">
+                <p>I am currently pursuing my M.Sc. in Astrophysics and Cosmology at <strong>Universit&agrave; degli Studi di Padova</strong> in Italy. I previously graduated with a B.Sc. in Physics from <strong>Universitas Gadjah Mada</strong> in Indonesia, where I specialised in Theoretical and Computational Physics.</p>
+                <p>Next up is an <strong>Erasmus+ traineeship at IRAM Grenoble</strong>, France, within the Superconducting Devices Group &mdash; working with Dr. Eduard Driessen on superconducting detectors and radio astronomy instrumentation receiver systems.</p>
+                <p>Away from the telescope, I&rsquo;m active in intersectional advocacy and community building through collective actions in Garut with <strong>Sadar Setara</strong> and <strong>Ruang Postulat</strong>.</p>
+              </div>
             </div>
           </div>
-
-          <div class="prose">
-            <p>This model helps separate white frequency noise processes from random walk positional changes caused by plasma jets or structural variations at high resolution.</p>
-          </div>
-
-          <p style="margin-top:30px"><a class="btn btn--ghost" href="https://arxiv.org/abs/2401.12325" target="_blank" rel="noopener">read on arXiv</a></p>
+        </div>
+        <div class="win__status" aria-hidden="true">
+          <span>Ln 1, Col 1</span><span>100%</span><span>UTF-8</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- outreach ------------------------------------------------ -->
-  <section class="outreach" id="outreach">
+  <!-- focus: System Properties ------------------------------- -->
+  <section class="band band--ink" id="focus">
     <div class="shell">
-      <p class="label reveal">outreach &middot; science communication</p>
-      <h2 class="display display--sm reveal" style="margin-bottom:40px">Everything that won&rsquo;t fit in a paper.</h2>
-
-      <img class="outreach__banner reveal" src="img/observationally-speaking-banner.png" alt="Observationally Speaking channel banner">
-
-      <div class="channels">
-        <article class="channel reveal">
-          <h3>Observationally Speaking</h3>
-          <p>YouTube storytelling blending warm visual reflections with high-energy astrophysics and cosmic science topics.</p>
-          <a class="btn" href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">launch channel</a>
-        </article>
-        <article class="channel reveal">
-          <h3>yourastrophysicist</h3>
-          <p>A Substack publication bridging theoretical physics, literature, philosophy, and environmental perspectives.</p>
-          <a class="btn" href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">read essays</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- cv ------------------------------------------------------ -->
-  <section class="cv" id="cv">
-    <div class="shell">
-      <p class="label label--pink reveal">curriculum vitae</p>
-      <h2 class="display display--sm reveal">Education &amp; highlights</h2>
-
-      <div class="cv__grid">
-        <div class="cv__col reveal">
-          <h3>education</h3>
-          <div class="cv__item">
-            <h4>M.Sc. Astrophysics and Cosmology</h4>
-            <p>Universit&agrave; degli Studi di Padova (UNIPD), Italy<br>High Energy Instrumentation Laboratory &mdash; 28/30</p>
-          </div>
-          <div class="cv__item">
-            <h4>B.Sc. Physics</h4>
-            <p>Universitas Gadjah Mada (UGM), Indonesia<br>Theoretical and Computational Physics concentration</p>
-          </div>
-
-          <h3 style="margin-top:44px">publications</h3>
-          <div class="cv__item">
-            <h4>Positional Stability Analysis of Quasar 4C31.61</h4>
-            <p>Using VLBI Time Series and Allan Standard Deviation<br>Journal of Physics: Conference Series &middot; arXiv:2401.12325</p>
-          </div>
+      <div class="win reveal">
+        <div class="win__bar">
+          <span class="win__title">System Properties &mdash; Jessica Info</span>
+          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
         </div>
+        <div class="win__body">
+          <p class="label">Focus</p>
+          <h2 class="display display--sm" style="margin-bottom:26px">Where curiosity meets <span class="serif-em">rigour</span>.</h2>
 
-        <div class="cv__col reveal">
-          <h3>selected achievements</h3>
-          <ul class="cv__list">
-            <li>Erasmus+ traineeship candidate at IRAM Grenoble, Superconducting Devices Group &mdash; supervised by Dr. Eduard Driessen.</li>
-            <li>Creator of <strong>Observationally Speaking</strong>, a YouTube channel on high-energy astrophysics and cosmic science.</li>
-            <li>Author of <strong>yourastrophysicist</strong> on Substack, bridging physics, literature, philosophy and ecology.</li>
-            <li>Advocacy lead across the <strong>Sadar Setara</strong> and <strong>Ruang Postulat</strong> community campaigns in Garut.</li>
-            <li>High Energy Instrumentation Laboratory completed with a grade of 28/30.</li>
-          </ul>
+          <div class="focus__grid">
+            <article class="focus__card">
+              <p class="focus__num">01</p>
+              <h3>Observational cosmology</h3>
+              <p>VLBI time-series analysis and quasar astrometry &mdash; testing how stable our celestial reference points really are.</p>
+            </article>
+            <article class="focus__card">
+              <p class="focus__num">02</p>
+              <h3>Instrumentation</h3>
+              <p>Superconducting detectors and radio astronomy receiver systems, with hands-on high-energy instrumentation lab work.</p>
+            </article>
+            <article class="focus__card">
+              <p class="focus__num">03</p>
+              <h3>Computation</h3>
+              <p>Reproducible scientific pipelines, from noise modelling to manuscript, built on an open Python stack.</p>
+            </article>
+          </div>
+
+          <fieldset class="field">
+            <legend>Computational Tech Stack</legend>
+            <ul class="stack">
+              <li>Python</li>
+              <li>Astropy</li>
+              <li>SciPy</li>
+              <li>NumPy</li>
+              <li>Matplotlib</li>
+              <li>Polars</li>
+              <li>scikit-learn</li>
+              <li>LaTeX</li>
+              <li>C4 architecture modelling</li>
+              <li>Obsidian / Zettelkasten</li>
+            </ul>
+          </fieldset>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- cta ----------------------------------------------------- -->
-  <section class="cta" id="contact">
+  <!-- research: WordPad -------------------------------------- -->
+  <section class="band band--deep" id="research">
     <div class="shell">
-      <span class="sticker" style="top:16%;left:7%;--rot:10deg">&#127756;</span>
-      <span class="sticker" style="bottom:18%;right:9%;--rot:-11deg;animation-delay:1.6s">&#10022;</span>
-      <img class="cta__portrait reveal" src="img/jessica-illustration.jpg" alt="Illustrated portrait of Jessica Syafaq Muthmaina">
-      <p class="label reveal">contact</p>
-      <h2 class="display reveal">Ready to look at the sky together?</h2>
-      <a class="btn reveal" href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">say hello</a>
+      <div class="win reveal">
+        <div class="win__bar">
+          <span class="win__title">Quasar_Research.doc &mdash; WordPad</span>
+          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
+        </div>
+        <div class="win__toolbar" aria-hidden="true">
+          <b>B</b><i>I</i><u>U</u>
+          <span class="divider"></span>
+          <span class="fontname">MS Sans Serif</span>
+        </div>
+        <div class="win__doc">
+          <div class="research__grid">
+            <div class="research__media">
+              <img src="img/jessica-binary-camera.jpg" alt="Jessica Syafaq Muthmaina photographed with a camera">
+            </div>
+            <div>
+              <p class="label">Featured research</p>
+              <h2 class="doc-title">Positional Stability Analysis of Quasar 4C31.61 Using VLBI Time Series and Allan Standard Deviation</h2>
+              <p class="doc-meta">Journal of Physics: Conference Series &middot; arXiv:2401.12325</p>
+
+              <div class="prose">
+                <p>Quasar <strong>4C31.61 (2201+315)</strong> is an essential celestial reference point in the International Celestial Reference Frame (ICRF). To evaluate its positional stability, we analyse multi-year VLBI position time series using the Allan standard deviation method.</p>
+              </div>
+
+              <div class="formula">
+                <p class="formula__label">Allan variance formula</p>
+                <div class="math">
+                  <span>&sigma;<sub>y</sub><sup>2</sup>(&tau;)</span>
+                  <span>=</span>
+                  <span class="frac"><span>1</span><span>2(N&minus;1)</span></span>
+                  <span class="sum"><span>N&minus;1</span><b>&Sigma;</b><span>i=1</span></span>
+                  <span>(&#563;<sub>i+1</sub> &minus; &#563;<sub>i</sub>)<sup>2</sup></span>
+                </div>
+              </div>
+
+              <div class="prose">
+                <p>This model helps separate white frequency noise processes from random walk positional changes caused by plasma jets or structural variations at high resolution.</p>
+              </div>
+
+              <p style="margin-top:26px"><a class="btn98" href="https://arxiv.org/abs/2401.12325" target="_blank" rel="noopener">Read on arXiv</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="win__status" aria-hidden="true">
+          <span>For Help, press F1</span><span>Page 1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- outreach: Internet Explorer ---------------------------- -->
+  <section class="band band--pink" id="outreach">
+    <div class="shell">
+      <div class="win reveal">
+        <div class="win__bar">
+          <span class="win__title">Outreach.url &mdash; Internet Explorer</span>
+          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
+        </div>
+        <div class="addressbar">
+          <span>Address</span>
+          <input type="text" value="https://yourastrophysicist.substack.com/" readonly aria-label="Address bar">
+        </div>
+        <div class="win__body">
+          <img class="outreach__banner" src="img/observationally-speaking-banner.png" alt="Observationally Speaking channel banner">
+
+          <p class="label">Outreach &middot; science communication</p>
+          <h2 class="display display--sm" style="margin-bottom:26px">Everything that won&rsquo;t fit in a paper.</h2>
+
+          <div class="channels">
+            <article class="channel">
+              <h3>Observationally Speaking</h3>
+              <p>YouTube storytelling blending warm visual reflections with high-energy astrophysics and cosmic science topics.</p>
+              <a class="btn98 btn98--primary" href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">Launch channel</a>
+            </article>
+            <article class="channel">
+              <h3>yourastrophysicist</h3>
+              <p>A Substack publication bridging theoretical physics, literature, philosophy, and environmental perspectives.</p>
+              <a class="btn98 btn98--primary" href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">Read essays</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cv: Notepad -------------------------------------------- -->
+  <section class="band" id="cv">
+    <div class="shell">
+      <div class="win reveal">
+        <div class="win__bar">
+          <span class="win__title">Resume.txt &mdash; Notepad</span>
+          <span class="win__ctrls" aria-hidden="true"><span>_</span><span>&#9633;</span><span>&times;</span></span>
+        </div>
+        <div class="win__menu" aria-hidden="true">
+          <span>File</span><span>Edit</span><span>Format</span><span>Help</span>
+        </div>
+        <div class="win__doc">
+          <p class="label">Curriculum vitae</p>
+          <h2 class="display display--sm" style="margin-bottom:30px">Education &amp; highlights</h2>
+
+          <div class="cv__grid">
+            <div class="cv__col">
+              <h3>Education</h3>
+              <div class="cv__item">
+                <h4>M.Sc. Astrophysics and Cosmology</h4>
+                <p>Universit&agrave; degli Studi di Padova (UNIPD), Italy<br>High Energy Instrumentation Laboratory &mdash; 28/30</p>
+              </div>
+              <div class="cv__item">
+                <h4>B.Sc. Physics</h4>
+                <p>Universitas Gadjah Mada (UGM), Indonesia<br>Theoretical and Computational Physics concentration</p>
+              </div>
+
+              <h3 style="margin-top:38px">Publications</h3>
+              <div class="cv__item">
+                <h4>Positional Stability Analysis of Quasar 4C31.61</h4>
+                <p>Using VLBI Time Series and Allan Standard Deviation<br>Journal of Physics: Conference Series &middot; arXiv:2401.12325</p>
+              </div>
+            </div>
+
+            <div class="cv__col">
+              <h3>Selected achievements</h3>
+              <ul class="cv__list">
+                <li>Erasmus+ traineeship candidate at IRAM Grenoble, Superconducting Devices Group &mdash; supervised by Dr. Eduard Driessen.</li>
+                <li>Creator of <strong>Observationally Speaking</strong>, a YouTube channel on high-energy astrophysics and cosmic science.</li>
+                <li>Author of <strong>yourastrophysicist</strong> on Substack, bridging physics, literature, philosophy and ecology.</li>
+                <li>Advocacy lead across the <strong>Sadar Setara</strong> and <strong>Ruang Postulat</strong> community campaigns in Garut.</li>
+                <li>High Energy Instrumentation Laboratory completed with a grade of 28/30.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="win__status" aria-hidden="true">
+          <span>Ln 1, Col 1</span><span>100%</span><span>UTF-8</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact: dialog box ------------------------------------ -->
+  <section class="band band--ink" id="contact">
+    <div class="shell">
+      <div class="win dialog reveal">
+        <div class="win__bar">
+          <span class="win__title">Contact</span>
+          <span class="win__ctrls" aria-hidden="true"><span>&times;</span></span>
+        </div>
+        <img class="dialog__portrait" src="img/jessica-illustration.jpg" alt="Illustrated portrait of Jessica Syafaq Muthmaina">
+        <div class="dialog__body">
+          <div class="dialog__icon" aria-hidden="true">&#10022;</div>
+          <div class="dialog__msg">
+            <h2>Ready to look at the sky together?</h2>
+            <p>Open to collaborations, talks and questions about anything above.</p>
+          </div>
+        </div>
+        <div class="dialog__actions">
+          <a class="btn98 btn98--primary" href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">Say hello</a>
+          <a class="btn98" href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">Watch first</a>
+        </div>
+      </div>
     </div>
   </section>
 
 </main>
 
-<!-- footer ---------------------------------------------------- -->
-<footer class="footer">
-  <div class="shell">
-    <div class="footer__grid">
-      <div>
-        <p class="footer__brand">your<span>astrophysicist</span></p>
-        <p class="footer__blurb">Jessica Syafaq Muthmaina &mdash; astrophysics and cosmology, from quasar astrometry to the stories we tell about the sky.</p>
-      </div>
-      <div>
-        <h4>explore</h4>
-        <ul>
-          <li><a href="#about">about</a></li>
-          <li><a href="#focus">focus</a></li>
-          <li><a href="#research">research</a></li>
-          <li><a href="#outreach">outreach</a></li>
-          <li><a href="#cv">cv</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>elsewhere</h4>
-        <ul>
-          <li><a href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">Substack</a></li>
-          <li><a href="https://arxiv.org/abs/2401.12325" target="_blank" rel="noopener">arXiv</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__base">
-      <span>&copy; <span id="yr"></span> Jessica Syafaq Muthmaina</span>
-      <span>built with starlight</span>
-    </div>
+<!-- taskbar --------------------------------------------------- -->
+<nav class="taskbar" aria-label="Section shortcuts">
+  <a class="taskbar__start" href="#top">
+    <svg viewBox="0 0 16 16" aria-hidden="true">
+      <rect x="1" y="1" width="6" height="6" fill="#ff5fc6"/>
+      <rect x="9" y="1" width="6" height="6" fill="#ea587d"/>
+      <rect x="1" y="9" width="6" height="6" fill="#fccae9"/>
+      <rect x="9" y="9" width="6" height="6" fill="#1e1e20"/>
+    </svg>
+    <span>Start</span>
+  </a>
+  <span class="taskbar__divider" aria-hidden="true"></span>
+  <div class="taskbar__tabs">
+    <a href="#about">AboutMe.txt</a>
+    <a href="#focus">System.sys</a>
+    <a href="#research">Quasar.doc</a>
+    <a href="#outreach">Outreach.url</a>
+    <a href="#cv">Resume.txt</a>
+  </div>
+  <span class="taskbar__divider" aria-hidden="true"></span>
+  <div class="taskbar__tray"><span id="clock">--:--</span></div>
+</nav>
+
+<!-- credits --------------------------------------------------- -->
+<footer class="credits">
+  <div class="shell credits__inner">
+    <span>&copy; <span id="yr"></span> Jessica Syafaq Muthmaina</span>
+    <span>
+      <a href="https://www.youtube.com/@observationallyspeaking" target="_blank" rel="noopener">YouTube</a> &middot;
+      <a href="https://yourastrophysicist.substack.com" target="_blank" rel="noopener">Substack</a> &middot;
+      <a href="https://arxiv.org/abs/2401.12325" target="_blank" rel="noopener">arXiv</a>
+    </span>
   </div>
 </footer>
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // taskbar clock
+  var clock = document.getElementById('clock');
+  function tick() {
+    clock.textContent = new Date().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+  }
+  tick();
+  setInterval(tick, 10000);
 
   // mobile nav
   var toggle = document.querySelector('.nav__toggle');
@@ -274,13 +364,13 @@
   toggle.addEventListener('click', function () {
     var open = links.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent = open ? 'close' : 'menu';
+    toggle.textContent = open ? 'Close' : 'Menu';
   });
   links.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') {
       links.classList.remove('is-open');
       toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = 'menu';
+      toggle.textContent = 'Menu';
     }
   });
 
@@ -292,10 +382,9 @@
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+  }, { threshold: 0.06, rootMargin: '0px 0px -40px' });
 
-  document.querySelectorAll('.reveal').forEach(function (el, i) {
-    el.style.transitionDelay = (i % 4) * 70 + 'ms';
+  document.querySelectorAll('.reveal').forEach(function (el) {
     io.observe(el);
   });
 </script>
