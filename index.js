@@ -9,10 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1. Initial window layout and tray clock setup
     updateTrayClock();
     setInterval(updateTrayClock, 1000);
+    updateLockClock();
+    setInterval(updateLockClock, 1000);
     
-    // Open default windows on startup so desktop is active
-    openWindow('win-about');
-    openWindow('win-winamp');
+    // Start clean with NO windows open on startup as requested
+    document.querySelectorAll('.window').forEach(win => {
+        win.style.display = 'none';
+    });
     rebuildTaskbarTabs();
     
     // Global mousedown listener to handle window focus activation
@@ -40,6 +43,38 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. Initialize SoundCloud API Widget
     initSoundCloudWidget();
 });
+
+/* Lock Screen Handler */
+function unlockDesktop() {
+    const lockScreen = document.getElementById('lock-screen');
+    if (lockScreen && lockScreen.style.display !== 'none') {
+        lockScreen.classList.add('unlock-fade');
+        setTimeout(() => {
+            lockScreen.style.display = 'none';
+        }, 400);
+    }
+}
+
+document.addEventListener('keydown', (e) => {
+    const lockScreen = document.getElementById('lock-screen');
+    if (lockScreen && lockScreen.style.display !== 'none') {
+        if (e.key === 'Enter' || e.key === 'Escape' || (e.ctrlKey && e.altKey && (e.key === 'Delete' || e.key === 'Del'))) {
+            unlockDesktop();
+        }
+    }
+});
+
+function updateLockClock() {
+    const el = document.getElementById('lock-screen-clock');
+    if (!el) return;
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    const ampm = hours >= 12 ? 'PM' : 'AM';
+    hours = hours % 12 || 12;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    el.textContent = `${hours}:${minutes} ${ampm}`;
+}
 
 /* Window Dragging Handlers */
 function dragStart(e, windowId) {
